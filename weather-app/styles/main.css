@@ -15,7 +15,7 @@ font-family: 'Open Sans', sans-serif;
 
 body {
     min-height: 100vh;
-    background-image: url(/img/main_background.jpeg);
+    background-image: url(../img/main_background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
