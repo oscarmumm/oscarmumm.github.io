@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4E9E3;
+    font-size: 14px;
+    min-width: 350px;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #8B8E95;
+    width: 350px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+}
+
+button {
+    color: #fff;
+    background-color: #3D8168;
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+main div img {
+    border-radius: 10px 10px 0 0;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: #1D212B;
+    padding: .25em 0 .5em 0;
+    font-size: 2.5em;
+}
+.picture-mobile {
+    width: 100%;
+}
+
+.picture-desktop {
+    display: none;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    padding: 1em 0 .5em 0;
+}
+
+.price :first-child {
+    display: block;
+    font-family: 'Fraunces', serif;
+    color: #3D8168;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.old-price {
+    text-decoration: line-through;
+    padding: .5rem;
+}
+
+.description-div {
+    padding: 1em;
+}
+
+.description-div > :first-child{
+    letter-spacing: 5px;
+}
+
+@media (min-width: 992px) {
+    main {
+        display: flex;
+        width: 700px;
+    }
+    .picture-mobile {
+        display: none;
+    }
+    .picture-desktop {
+        display: flex;
+        width: 100%;
+    }
+    .picture-div {
+        width: 50%;
+    }
+    .description-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        margin: 1em;
+    }
+    main div img {
+        border-radius: 10px 0 0 10px;
+    }
+}
