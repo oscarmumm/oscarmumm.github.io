@@ -4,20 +4,20 @@
     font-family: 'Play', sans-serif;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    height: 100vh;
+    min-width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
 }
 
 h1 {
     color: #fff;
-    font-size: 144px;
+    font-size: 10vh;
     font-weight: 300;
 }
