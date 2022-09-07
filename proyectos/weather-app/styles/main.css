@@ -53,6 +53,7 @@ body {
     padding: 0.5rem;
     height: 70vh;
     min-height: 400px;
+    min-width: 350px;
     
     width: 100%;
     display: flex;
