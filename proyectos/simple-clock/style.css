@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+    font-family: 'Play', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+h1 {
+    color: #fff;
+    font-size: 144px;
+    font-weight: 300;
+}
