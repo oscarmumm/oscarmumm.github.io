@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="theme night">
+
+        <h1 class="theme night">Basic Calculator App</h1>
+
+        <div id="calculadora" class="calculadora theme night">
+
+            <div id="pantalla" class="pantalla theme night">
+                <button id="boton-menu" class="theme night"><img src="options.svg" alt=""></button>
+                <div id="menu-opciones" class="close">
+                    <button id="boton-light-mode" class="theme night">Desactivar modo nocturno</button>
+                </div>
+                <div id="pantallaArriba" class="pantallaArriba theme night"></div>
+                <div id="pantallaAbajo" class="pantallaAbajo theme night"></div>
+            </div>
+
+            <div class="botones">
+                <button value="AC" class="boton theme night" id="boton-borrar-todo"> AC </button>
+                <button value="%" class="boton porcentaje theme night"> % </button>
+                <button value="÷" class="boton operacion theme night"> ÷ </button>
+                <button value="7" class="boton numero theme night"> 7 </button>
+                <button value="8" class="boton numero theme night"> 8 </button>
+                <button value="9" class="boton numero theme night"> 9 </button>
+                <button value="x" class="boton operacion theme night"> x </button>
+                <button value="4" class="boton numero theme night"> 4 </button>
+                <button value="5" class="boton numero theme night"> 5 </button>
+                <button value="6" class="boton numero theme night"> 6 </button>
+                <button value="-" class="boton operacion theme night"> - </button>
+                <button value="1" class="boton numero theme night"> 1 </button>
+                <button value="2" class="boton numero theme night"> 2 </button>
+                <button value="3" class="boton numero theme night"> 3 </button>
+                <button value="+" class="boton operacion theme night"> + </button>
+                <button value="0" class="boton numero theme night"> 0 </button>
+                <button value="." class="boton numero theme night"> . </button>
+                <button value="=" class="boton theme night" id="boton-igual"> = </button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

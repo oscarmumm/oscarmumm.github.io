@@ -4,8 +4,17 @@ font-family: 'JetBrains Mono', monospace;
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,300;1,500;1,700&display=swap');
 
+:root {
+    --color-cove-1: #006BB9;
+    --color-cove-2: #30A0E0;
+    --color-cove-3: #FFC973;
+    --color-cove-4: #FFE3B3;
+}
+
 body {
     font-family: 'JetBrains Mono', monospace;
+    color: var(--color-cove-4);
+    background-color: var(--color-cove-1);
 }
 
 .tech-icons img {
@@ -15,4 +24,34 @@ body {
 
 .avatar {
     max-width: 300px;
+}
+
+.card {
+    background-color: var(--color-cove-4);
+    color: var(--color-cove-1);
+}
+
+.navbar {
+    background-color: var(--color-cove-4);
+}
+
+.navbar-brand {
+    color: var(--color-cove-1);
+}
+
+.tech-icons {
+    filter: drop-shadow(0 0 10px #FFE3B3);
+}
+.btn {
+    background-color: var(--color-cove-2);
+    color: var(--color-cove-4);
+}
+
+footer {
+    background-color: var(--color-cove-2);
+    color: var(--color-cove-4);
+}
+
+footer a {
+    color: var(--color-cove-4);
 }
