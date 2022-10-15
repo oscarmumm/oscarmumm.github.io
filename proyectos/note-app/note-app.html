@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <main>
+        
+        <div class="div-central">
+            <div class="div-titulo">
+                <h1>App de notas <img src="icons/note-svgrepo-com.svg" alt=""></h1>
+                <button id="btnAgregar" class=" btn btn-agregar"><img src="icons/note-add-svgrepo-com.svg" alt=""> Agrega nueva nota</button>
+            </div>
+            <div  id="campoNuevaNota" class="contraer nueva-nota">
+                <h2>Agrega una nueva nota: </h2>
+                <form>
+                    <input id="titulo" class="input-titulo" type="text" placeholder="titulo">
+                    <textarea id="detalles" class="input-detalles" type="text" placeholder="detalles" rows="10"></textarea>
+                    <button id="btnGuardar" class="btn btn-guardar">Guardar</button>
+                    <button id="btnCancelar" class="btn btn-cancelar">Cancelar</button>
+                </form>
+            </div>
+            <div id="divNotasGuardadas" class="div-notas-guardadas">
+
+            </div>
+        </div>
+    </main>
+    <footer>oscarmumm &copy; 2022</footer>
+    
+    <script src="app/main.js"></script>
+</body>
+</html>

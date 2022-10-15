@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141519;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.card {
+    background-image: linear-gradient(to top, #171E28, #242931);
+    border-radius: 20px;
+    box-shadow: 0 0 1px black;
+    padding: 1rem;
+    margin: 0 1.5rem 0 1.5rem;
+    max-width: 300px;
+}
+
+.card > * {
+    margin: .5rem 0 .5rem 0;
+}
+
+.btn {
+    background-color: #272E38;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: none;
+    color: hsl(216, 12%, 54%);
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    color: hsl(216, 12%, 54%);
+}
+.thank-you {
+    display: none;
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.submit {
+    color: #fff;
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    border-radius: 30px;
+    padding: .75rem;
+    border: none;
+    letter-spacing: 4px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+}
