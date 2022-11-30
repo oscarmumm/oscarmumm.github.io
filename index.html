@@ -4,115 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- AGREGARLE ÍCONO PARA QUE APAREZCA EN LA PESTAÑA DEL NAVEGADOR SIGUIENDO EL SIGUIENTE FORMATO <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio 2.0</title>
 </head>
 <body>
-    <nav class="navbar">
-        <h1 class="navbar-brand px-4">Portfolio en progreso</h1>
-    </nav>
+    <main>
 
-    <main class="container">
-        <section class="container">
-            <div class="row">
-                <h1 class="text-center display-5 pt-4">Hola, soy <strong> Oscar!</strong> </h1>
-                <div class="text-center">
-                    <img class="avatar" src="imagenes/avatar1.png" alt="">
-                </div>
-                <p class="text-center  display-5 p-1">Soy estudiante de desarrollo web front-end. Este portfolio está pensado para dar una pequeña muestra de mis proyectos y aprendizaje.</p>
+        <div id="introAndroid" class="intro_android">
+            <div>
+                <h1>Bienvenido a mi Portfolio</h1>
             </div>
-            <p class="text-center display-5 p-3">Tecnologías que manejo:</p>
-            <div class="tech-icons row">
-                <div class="md-col d-flex justify-content-around">
-                    <img class="img-fluid" src="icons/vscode-svgrepo-com.svg" alt="vscode logo">
-                    <img class="img-fluid" src="icons/html-5-svgrepo-com.svg" alt="html logo">
-                    <img class="img-fluid" src="icons/css-3-logo-svgrepo-com.svg" alt="css3 logo">
-                    <img class="img-fluid" src="icons/javascript-svgrepo-com.svg" alt="js logo">
-                    <img class="img-fluid" src="icons/bootstrap-svgrepo-com.svg" alt="bootstrap logo">
-                    <img class="img-fluid" src="icons/git-icon-svgrepo-com.svg" alt="git logo">
-                    <img class="img-fluid" src="icons/github-svgrepo-com.svg" alt="github logo">
-                </div>
+            <div class="contedor_animacion">
+                <div class="circulo_inicio circ_uno saltar"></div>
+                <div class="circulo_inicio circ_dos saltar"></div>
+                <div class="circulo_inicio circ_tres saltar"></div>
+                <div class="circulo_inicio circ_cuatro saltar"></div>
             </div>
-        </section>
+            <button id="botonEntrarAndroid" class="boton_entrar_android">ENTRAR</button>
+            <p>powered by <span>oscarmumm</span></p>
+        </div>
+
+        <div class="android_home">
+            <div id="fechaClima" class="fecha_clima">
+                <h3 id="divFecha" class="divFecha"></h3>
+                <div id="widgetClima" class="widget_clima">
+                    <img id="iconoClima" src="" alt="">
+                    <h3 id="homeTemp" class="home_temp"></h3>
+                </div>
+                <h2 id="divReloj" class="div_reloj"></h2>
+            </div>
+            <div class="apps_box" id="appsBox">
+                <button id="iconoAppReloj">
+                    <img src="/icons/animated-icons-02-svgrepo-com.svg" alt="">
+                    <p>Reloj</p>
+                </button>        
+                <button id="iconoAppCalculadora">
+                    <img src="/icons/animated-icons-13-svgrepo-com.svg" alt="">
+                    <p>Calculadora</p>
+                </button>        
+                <button id="iconoAppClima">
+                    <img src="/icons/animated-icons-04-svgrepo-com.svg" alt="">
+                    <p>Clima</p>
+                </button>        
+                <button>
+                    <img src="/icons/animated-icons-05-svgrepo-com.svg" alt="">
+                    <p></p>
+                </button>        
+                <button>
+                    <img src="/icons/animated-icons-17-svgrepo-com.svg" alt="">
+                    <p></p>
+                </button>        
+            </div>
+        </div>
+
+        <div id="navBar" class="nav_bar">
+            <button id="botonNavAtras"><img src="Icons/system-icons/arrow_back_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+            <button id="botonNavHome"><img src="icons/system-icons/radio_button_unchecked_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+            <button><img src="icons/system-icons/settings_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+        </div>
         
-        <section class="container">
-
-            <!-- Tarjetas -->
-            <h3 class="pt-5">Proyectos de frontendmentor</h3>
-            <div class="row">
-                <div class="card col-md p-0 my-2 mx-0 m-md-2">
-                    <img class="card-img-top" src="screenshots/qr-code-desktop.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">QR code component</h5>
-                        <p class="card-text">HTML5 - CSS3</p>
-                        <a class="btn btn-primary" href="https://oscarmumm.github.io/proyectos/frontendmentor/qr-code-component/qr-code-component.html" target="_blank">Sitio web</a>
-                        <a class="btn btn-primary" href="https://github.com/oscarmumm/oscarmumm.github.io/tree/main/proyectos/frontendmentor/qr-code-component" target="_blank">Código</a>
-                    </div>
-                </div>
-                <div class="card col-md p-0 my-2 mx-0 m-md-2">
-                    <img class="card-img-top" src="screenshots/product-preview-card-component.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Product preview card component</h5>
-                        <p class="card-text">HTML5 - CSS3</p>
-                        <a class="btn btn-primary" href="https://oscarmumm.github.io/proyectos/frontendmentor/product-preview-card-component/product-preview-card-component.html" target="_blank">Sitio web</a>
-                        <a class="btn btn-primary" href="https://github.com/oscarmumm/oscarmumm.github.io/tree/main/proyectos/frontendmentor/product-preview-card-component" target="_blank">Código</a>
-                    </div>
-                </div>
+        <div id="appReloj" class="app app_reloj">
+            <div>
+                <p id="relojGrandeApp" class="reloj_grande_app"></p>
+                <p id="fechaApp" class="fecha_app"></p>
             </div>
-            <h3 class="pt-5">Proyectos propios</h3>
-            <div class="row">
-                <div class="card col-md p-0 my-2 mx-0 m-md-2">
-                    <img class="card-img-top" src="screenshots/weather-app.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Página del clima</h5>
-                        <p class="card-text">HTML5 - CSS3 - JavaScript - API de Openweather</p>
-                        <a class="btn btn-primary" href="https://oscarmumm.github.io/proyectos/weather-app/weather.html" target="_blank">Sitio web</a>
-                        <a class="btn btn-primary" href="https://github.com/oscarmumm/oscarmumm.github.io/tree/main/proyectos/weather-app" target="_blank">Código</a>
-                    </div>
-                </div>
+        </div>
 
-                
-                <div class="card col-md p-0 my-2 mx-0 m-md-2">
-                    <img class="card-img-top" src="screenshots/note-app.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">App de Notas</h5>
-                        <p class="card-text">HTML5 - CSS3 - JavaScript</p>
-                        <a class="btn btn-primary" href="https://oscarmumm.github.io/proyectos/note-app/note-app.html" target="_blank">Sitio web</a>
-                        <a class="btn btn-primary" href="https://github.com/oscarmumm/oscarmumm.github.io/tree/main/proyectos/note-app" target="_blank">Código</a>
-                    </div>
-                </div>
+        <div class="app app_clima" id="appClima">
+            <div id="pantallaAppClima" class="pantalla_clima">
+                <img src="" alt="">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
 
-                <div class="card col-md p-0 my-2 mx-0 m-md-2">
-                    <img class="card-img-top" src="screenshots/simple-clock.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Reloj simple</h5>
-                        <p class="card-text">HTML5 - CSS3 - JavaScript</p>
-                        <a class="btn btn-primary" href="https://oscarmumm.github.io/proyectos/simple-clock/clock.html" target="_blank">Sitio web</a>
-                        <a class="btn btn-primary" href="https://github.com/oscarmumm/oscarmumm.github.io/tree/main/proyectos/simple-clock" target="_blank">Código</a>
-                    </div>
-                </div>
-
+        <div class="app app_calculadora" id="appCalculadora">
+            <div id="pantallaCalculadora" class="pantalla_calculadora">
+                <div id="pantallaCalcArriba" class="pantallaArriba"></div>
+                <div id="pantallaCalcAbajo" class="pantallaAbajo"></div>
             </div>
 
-        </section>
+            <div class="botones_calculadora">
+                <button value="AC" class="boton_calc" id="boton-borrar-todo"> AC </button>
+                <button value="%" class="boton_calc porcentaje"> % </button>
+                <button value="÷" class="boton_calc operacion"> ÷ </button>
+                <button value="7" class="boton_calc numero"> 7 </button>
+                <button value="8" class="boton_calc numero"> 8 </button>
+                <button value="9" class="boton_calc numero"> 9 </button>
+                <button value="x" class="boton_calc operacion"> x </button>
+                <button value="4" class="boton_calc numero"> 4 </button>
+                <button value="5" class="boton_calc numero"> 5 </button>
+                <button value="6" class="boton_calc numero"> 6 </button>
+                <button value="-" class="boton_calc operacion"> - </button>
+                <button value="1" class="boton_calc numero"> 1 </button>
+                <button value="2" class="boton_calc numero"> 2 </button>
+                <button value="3" class="boton_calc numero"> 3 </button>
+                <button value="+" class="boton_calc operacion"> + </button>
+                <button value="0" class="boton_calc numero"> 0 </button>
+                <button value="." class="boton_calc numero"> . </button>
+                <button value="=" class="boton_calc" id="boton-igual"> = </button>
+            </div>
+        </div>
     </main>
-    
-    <footer class="container-fluid display-6 mt-5 p-5">
-        <p class="text-center">
-            Contacto:
-        </p>
-        <ul class="list-unstyled text-center m-0">
-            <li>
-                <a class="text-decoration-none" href="https://www.linkedin.com/in/oscar-mumm/" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-                <a class="text-decoration-none" href="https://github.com/oscarmumm" target="_blank">GitHub</a>
-            </li>
-        </ul>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="app/main.js"></script>
+    <script src="app/calc.js"></script>
 </body>
 </html>
