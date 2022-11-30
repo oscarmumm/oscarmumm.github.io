@@ -193,7 +193,8 @@ h1 {
     justify-content: space-evenly;
 }
 .nav_bar img {
-    width: 30px
+    width: 30px;
+    height: auto;
 }
 .nav_bar button {
     background: none;
