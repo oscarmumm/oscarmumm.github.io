@@ -23,8 +23,7 @@ main {
     top: 0;
     height: 100%;
     width: 100vw;
-    max-width: 500px;
-    
+    /* max-width: 500px; */
 }
 
 /* Pantalla de bienvenida */
@@ -165,6 +164,7 @@ h1 {
 }
 .apps_box {
     height: 15%;
+    min-height: 100px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.25);
     display: flex;
@@ -173,8 +173,10 @@ h1 {
 }
 .apps_box img {
     width: 100%;
+    max-width: 70px;
 }
 .apps_box button {
+    /* height: 100%; */
     margin: .5rem;
     background: none;
     border: none;
@@ -184,7 +186,7 @@ h1 {
 
 
 .nav_bar {
-    max-width: 480px;
+    /* max-width: 500px; */
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -206,7 +208,6 @@ h1 {
 .app {
     width: 100vw;
     height: calc(100% - 50px);
-    max-width: 480px;
     position: fixed;
 }
 
@@ -244,6 +245,7 @@ h1 {
 
 .pantalla_clima img {
     width: 80%;
+    max-width: 300px;
 } 
 .pantalla_clima h2 {
     font-size: 4rem;
@@ -259,6 +261,12 @@ h1 {
     padding: .5rem 0;
 }
 
+
+.bordes_calculadora {
+    height: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
 .app_calculadora {
     background-color: #1F2430;
 }
@@ -279,7 +287,7 @@ h1 {
     background-color: #D5DD4F;
 }
 .pantalla_calculadora {
-    height: 25%;
+    height: 35%;
     background-color: #000;
     border-radius: 0 0 20px 20px;
 }
@@ -298,11 +306,6 @@ h1 {
 }
 
 @media only screen and (min-width: 500px) {
-    main {
-        margin: 0 calc((100vw - 500px)/2);
-        border-left: 10px solid black;
-        border-right: 10px solid black;
-    }
     .fecha_clima {
         font-size: 3rem;
     }
