@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/main.css" />
+        <title>Oscar</title>
+    </head>
+    <body>
+        <div class="background"></div>
+        <header>
+            <button class="menu-icon" id="btnMenu">
+                <div id="menu-icon-div1"></div>
+                <div id="menu-icon-div2"></div>
+                <div id="menu-icon-div3"></div>
+            </button>
+        </header>
+        <nav class="navbar navbar-hidden" id="navBar">
+            <ul>
+                <li>
+                    <a class="navbar-anchor" href="#home">
+                        <img
+                            class="navbar-icon"
+                            src="./assets/icons/home.svg"
+                            alt=""
+                        />
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-anchor" href="#skills">
+                        <img
+                            class="navbar-icon"
+                            src="./assets/icons/skills.svg"
+                            alt=""
+                        />
+                        <span>Habilidades</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-anchor" href="#projects">
+                        <img
+                            class="navbar-icon"
+                            src="./assets/icons/projects.svg"
+                            alt=""
+                        />
+                        <span>Proyectos</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-anchor" href="#certification">
+                        <img
+                            class="navbar-icon"
+                            src="./assets/icons/certifications.svg"
+                            alt=""
+                        />
+                        <span>Certificaciones</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-anchor" href="#contact">
+                        <img
+                            class="navbar-icon"
+                            src="./assets/icons/contact.svg"
+                            alt=""
+                        />
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="section home" id="home">
+                <h1 class="home__main-title">Hola! Soy Oscar</h1>
+                <p class="home__subtitle">Desarrollador Web Front-end</p>
+                <p class="home__presentation">
+                    Trabajo hace muchos años en gastronomía, y estudio
+                    desarrollo web con el objetivo de poder cambiar el rumbo y
+                    poder trabajar en el rubro IT
+                </p>
+            </section>
+            <section class="section skills" id="skills">
+                <h2 class="skills__title">Habilidades</h2>
+                <p class="skills__message">
+                    Estas son algunas de las habilidades que he adquirido a lo
+                    largo de mi carrera
+                </p>
+                <ul class="skills__skills-list">
+                    <li class="skills__skills-list__element">
+                        <img
+                            class="skills__skills-list__icon"
+                            src="./assets/icons/html.svg"
+                            alt=""
+                        />
+                        <span class="skills__skills-list__skill-description">HTML</span>
+                    </li>
+                    <li class="skills__skills-list__element">
+                        <img
+                            class="skills__skills-list__icon"
+                            src="./assets/icons/css.svg"
+                            alt=""
+                        />
+                        <span class="skills__skills-list__skill-description">css</span>
+                    </li>
+                    <li class="skills__skills-list__element">
+                        <img
+                            class="skills__skills-list__icon"
+                            src="./assets/icons/javascript.svg"
+                            alt=""
+                        />
+                        <span class="skills__skills-list__skill-description">JavaScript</span>
+                    </li>
+                    <li class="skills__skills-list__element">
+                        <img
+                            class="skills__skills-list__icon"
+                            src="./assets/icons/bootstrap.svg"
+                            alt=""
+                        />
+                        <span class="skills__skills-list__skill-description">Bootstrap</span>
+                    </li>
+                    <li class="skills__skills-list__element">
+                        <img
+                            class="skills__skills-list__icon"
+                            src="./assets/icons/git.svg"
+                            alt=""
+                        />
+                        <span class="skills__skills-list__skill-description">Git</span>
+                    </li>
+                    <li class="skills__skills-list__element">
+                        <img
+                            class="skills__skills-list__icon"
+                            src="./assets/icons/pwa.svg"
+                            alt=""
+                        />
+                        <span class="skills__skills-list__skill-description">PWA</span>
+                    </li>
+                    <li class="skills__skills-list__element">
+                        <img
+                            class="skills__skills-list__icon"
+                            src="./assets/icons/react.svg"
+                            alt=""
+                        />
+                        <span class="skills__skills-list__skill-description">React</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="section projects" id="projects"></section>
+            <section class="section certification" id="certification"></section>
+            <section class="section contact" id="contact"></section>
+        </main>
+        <script src="./app/main.js"></script>
+    </body>
+</html>

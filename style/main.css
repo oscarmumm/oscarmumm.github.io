@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    /* COLOR PALLETE */
+    --dark-1: #191e29;
+    --dark-2: #132d46;
+    --medium: #696e79;
+    --accent: #01c38d;
+    --white: #ffffff;
+    --invert: #FE3C72;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: "Exo 2", sans-serif;
+}
+
+main {
+    z-index: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/*------------------------- BACKGROUND */
+
+.background {
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(25, 30, 41);
+
+    background: linear-gradient(
+        180deg,
+        rgba(25, 30, 41, 1) 0%,
+        rgba(19, 45, 70, 1) 100%
+    );
+}
+
+/*------------------------- HEADER */
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    background: var(--dark-1);
+}
+
+/*------------------------- MENU ICON */
+
+.menu-icon {
+    z-index: 4;
+    margin-left: 2rem;
+    /* position: fixed;
+    top: 1rem;
+    left: 2rem; */
+    width: 30px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu-icon > div {
+    display: block;
+    height: 3px;
+    border-radius: 5px;
+    width: 100%;
+    background: var(--accent);
+    transform-origin: left;
+    transition: all ease 0.5s;
+}
+
+.menu-click-style1 {
+    transform: rotate(45deg);
+}
+
+.menu-click-style2 {
+    opacity: 0;
+}
+
+.menu-click-style3 {
+    transform: rotate(-45deg);
+}
+
+/*------------------------- SECTION */
+
+.section {
+    height: 90vh;
+    /* border: 2px solid var(--accent); */
+    opacity: 0;
+    transition: all ease-in 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-section {
+    opacity: 1;
+}
+
+/*------------------------- NAVBAR */
+
+
+nav {
+    z-index: 2;
+    background: var(--dark-1);
+    width: 100%;
+    position: fixed;
+    bottom: 10vh;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: .8rem;
+}
+
+nav ul a span {
+    margin-top: .5rem;
+
+}
+
+.navbar-icon {
+    width: 40px;
+}
+
+.navbar-icon:hover {
+    filter: invert(1);
+}
+
+.navbar-visible {
+    animation-name: navbar-expand;
+    animation-duration: .5s;
+}
+
+.navbar-hidden {
+    animation-name: navbar-close;
+    animation-duration: .5s;
+    opacity: 0;
+    bottom: -50vh;
+}
+
+@keyframes navbar-expand {
+    from {
+        opacity: 0;
+        bottom: -50vh;
+    }
+    to {
+        opacity: 1;
+        bottom: 10vh;
+    }
+}
+
+@keyframes navbar-close {
+    from {
+        opacity: 1;
+        bottom: 10vh;
+    }
+    to {
+        opacity: 0;
+        bottom: -50vh;
+    }
+}
+
+/*------------------------- HOME SECTION */
+
+.home__main-title {
+    font-size: max(3rem, 6vw);
+    color: var(--accent);
+    text-shadow: -2px 2px var(--white);
+    text-align: left;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.home__subtitle {
+    font-size: max(1.5rem, 3vw);
+    padding: 0 1rem;
+    color: var(--accent);
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+}
+
+.home__presentation {
+    font-size: max(1rem, 2vw);
+    padding: 1rem;
+    color: var(--white);
+    text-align: left;
+    width: 100%;
+
+}
+
+/*------------------------- SKILLS */
+
+.skills__title {
+    font-size: max(2rem, 4vw);
+    color: var(--white);
+    margin: 2rem;
+    text-shadow: -2px 2px var(--accent);
+}
+
+.skills__message {
+    font-size: max(1rem, 2vw);
+    color: var(--white);
+    margin: 1rem;
+    text-align: center;
+}
+
+.skills__skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills__skills-list__element {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__skills-list__icon {
+    width: 70px;
+    margin: 1rem;
+}
+
+.skills__skills-list__skill-description {
+    color: var(--white);
+    text-align: center;
+}
