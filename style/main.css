@@ -104,7 +104,7 @@ header {
 /*------------------------- SECTION */
 
 .section {
-    min-height: 90vh;
+    min-height: 90dvh;
     /* border: 2px solid var(--accent); */
     opacity: 0;
     transition: all ease-in 1s;
