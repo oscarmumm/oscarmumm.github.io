@@ -118,6 +118,20 @@ header {
     opacity: 1;
 }
 
+.section__title {
+    font-size: max(2rem, 4vw);
+    color: var(--white);
+    margin: 2rem;
+    text-shadow: -2px 2px var(--accent);
+}
+
+.section__message {
+    font-size: max(1rem, 2vw);
+    color: var(--white);
+    margin: 1rem;
+    text-align: center;
+}
+
 /*------------------------- NAVBAR */
 
 
@@ -231,20 +245,6 @@ nav ul a span {
 
 /*------------------------- SKILLS */
 
-.skills__title {
-    font-size: max(2rem, 4vw);
-    color: var(--white);
-    margin: 2rem;
-    text-shadow: -2px 2px var(--accent);
-}
-
-.skills__message {
-    font-size: max(1rem, 2vw);
-    color: var(--white);
-    margin: 1rem;
-    text-align: center;
-}
-
 .skills__skills-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -263,4 +263,53 @@ nav ul a span {
 .skills__skills-list__skill-description {
     color: var(--white);
     text-align: center;
+}
+
+/*------------------------- PROJECTS */
+
+.project {
+    background: var(--accent);
+    border-radius: 30px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.project-title {
+    text-shadow: -1px 1px var(--white);
+}
+
+.project-img {
+    width: 300px;
+    margin: 1rem 0;
+}
+
+.project-description {
+    max-width: 300px;
+}
+
+.project-btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.btn-project {
+    width: 100px;
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+    background: var(--dark-2);
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.btn-project:hover {
+    background: var(--invert);
 }
