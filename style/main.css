@@ -104,7 +104,7 @@ header {
 /*------------------------- SECTION */
 
 .section {
-    height: 90vh;
+    min-height: 90vh;
     /* border: 2px solid var(--accent); */
     opacity: 0;
     transition: all ease-in 1s;
@@ -216,6 +216,20 @@ nav ul a span {
 
 /*------------------------- HOME SECTION */
 
+.profile-pic {
+    width: 200px;
+    transform: rotate(-25deg);
+    margin: 2rem 0;
+}
+
+.home-bg {
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    z-index: -1;
+    opacity: .2;
+}
+
 .home__main-title {
     font-size: max(3rem, 6vw);
     color: var(--accent);
@@ -244,6 +258,13 @@ nav ul a span {
 }
 
 /*------------------------- SKILLS */
+
+.skills-bg {
+    width: 90%;
+    position: absolute;
+    z-index: -1;
+    opacity: .2;
+}
 
 .skills__skills-list {
     display: grid;
@@ -312,4 +333,27 @@ nav ul a span {
 
 .btn-project:hover {
     background: var(--invert);
+}
+
+/*------------------------- CERTIFICATIONS */
+
+.certification-bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .2;
+}
+
+.institution-div {
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+.institution {
+    font-size: 1.25rem;
+    color: var(--accent);
+}
+
+.certification-name {
+    color: var(--white);
 }
