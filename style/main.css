@@ -289,7 +289,8 @@ nav ul a span {
 /*------------------------- PROJECTS */
 
 .project {
-    background: var(--accent);
+    /* background: var(--accent); */
+    /* background: rgba(1, 195, 141, .8); */
     border-radius: 30px;
     padding: 1rem;
     display: flex;
@@ -297,10 +298,13 @@ nav ul a span {
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    color: var(--white);
 }
 
 .project-title {
-    text-shadow: -1px 1px var(--white);
+    width: 100%;
+    color: var(--accent);
+    font-size: 1.5rem;
 }
 
 .project-img {
@@ -322,14 +326,17 @@ nav ul a span {
 }
 
 .btn-project {
+    font-family: "Exo 2", sans-serif;
+    cursor: pointer;
     width: 100px;
-    padding: .5rem;
+    padding: 1rem;
     border-radius: 10px;
     border: none;
-    background: var(--dark-2);
+    background: var(--accent);
     text-align: center;
     text-decoration: none;
-    color: var(--white);
+    color: var(--dark-2);
+    font-weight: bold;
 }
 
 .btn-project:hover {
@@ -358,4 +365,66 @@ nav ul a span {
 .certification-name {
     color: var(--white);
     font-style: italic;
+}
+
+/*------------------------- CONTACT */
+
+.contact-bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .1;   
+}
+
+.contact {
+    margin-bottom: 10vh;
+    color: var(--white);
+}
+
+.contact-mail, .contact-linkedin {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    font-size: 1.25rem;
+}
+
+.clipboard-btn {
+    padding: 1rem;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.clipboard-icon {
+    width: 50px;
+}
+
+.linkedin {
+    font-size: 1.25rem;
+}
+
+.linkedin-link {
+    margin-left: 1rem;
+}
+
+.linkedin-icon {
+    width: 50px;
+}
+
+.cv-btn {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background: var(--accent);
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark-2);
+    font-weight: 700;
+    cursor: pointer;
+    margin: 2rem;
 }
