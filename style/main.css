@@ -227,7 +227,7 @@ nav ul a span {
     position: absolute;
     bottom: 20%;
     z-index: -1;
-    opacity: .2;
+    opacity: .1;
 }
 
 .home__main-title {
@@ -263,7 +263,7 @@ nav ul a span {
     width: 90%;
     position: absolute;
     z-index: -1;
-    opacity: .2;
+    opacity: .1;
 }
 
 .skills__skills-list {
@@ -310,6 +310,7 @@ nav ul a span {
 
 .project-description {
     max-width: 300px;
+    font-weight: 600;
 }
 
 .project-btn-container {
@@ -341,7 +342,7 @@ nav ul a span {
     width: 100%;
     position: absolute;
     z-index: -1;
-    opacity: .2;
+    opacity: .1;
 }
 
 .institution-div {
@@ -356,4 +357,5 @@ nav ul a span {
 
 .certification-name {
     color: var(--white);
+    font-style: italic;
 }
