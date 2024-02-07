@@ -291,7 +291,7 @@ nav ul a span {
 .project {
     /* background: var(--accent); */
     /* background: rgba(1, 195, 141, .8); */
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -299,6 +299,7 @@ nav ul a span {
     justify-content: center;
     margin-top: 1rem;
     color: var(--white);
+    box-shadow: var(--accent) 0px 5px 15px;
 }
 
 .project-title {
@@ -379,15 +380,20 @@ nav ul a span {
 .contact {
     margin-bottom: 10vh;
     color: var(--white);
+    position: relative;
+    overflow: hidden;
 }
 
-.contact-mail, .contact-linkedin {
-    display: flex;
-    align-items: center;
+.contact-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
 }
 
-.email {
+.email, .linkedin {
     font-size: 1.25rem;
+    width: 100%;
+    text-align: end;
 }
 
 .clipboard-btn {
@@ -402,17 +408,30 @@ nav ul a span {
     width: 50px;
 }
 
-.linkedin {
-    font-size: 1.25rem;
-}
-
-.linkedin-link {
-    margin-left: 1rem;
-}
-
 .linkedin-icon {
     width: 50px;
 }
+
+.alert-msg {
+    background: var(--accent);
+    padding: 1rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 20vh;
+    box-shadow: var(--dark-1) 0px 5px 15px;
+    /* display: none; */
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.show-alert {
+    /* display: block; */
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
 
 .cv-btn {
     font-family: "Exo 2", sans-serif;

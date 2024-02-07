@@ -5,6 +5,8 @@ const menuIconDiv1 = document.getElementById("menu-icon-div1");
 const menuIconDiv2 = document.getElementById("menu-icon-div2");
 const menuIconDiv3 = document.getElementById("menu-icon-div3");
 const sections = document.querySelectorAll(".section");
+const clipboardBtn = document.getElementById("clipboardBtn");
+const alertMsg = document.getElementById("alertMsg");
 
 // OBSERVER PARA QUE LAS SECTIONS SE DIFUMINEN AL ENTRAR O SALIR DEL VIEWPORT
 const observer = new IntersectionObserver(
@@ -38,4 +40,13 @@ anchorElements.forEach((el) => {
         menuIconDiv2.classList.toggle("menu-click-style2");
         menuIconDiv3.classList.toggle("menu-click-style3");
     });
+});
+
+// APLICAR DEBOUNCE AL TOAST MSG
+clipboardBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText("oscarmumm@gmail.com");
+    alertMsg.classList.add("show-alert");
+    setTimeout(() => {
+        alertMsg.classList.remove("show-alert");
+    }, 1500);
 });
