@@ -299,7 +299,7 @@ nav ul a span {
     justify-content: center;
     margin-top: 1rem;
     color: var(--white);
-    box-shadow: var(--accent) 0px 5px 15px;
+    box-shadow: var(--accent) 0px 0px 15px;
 }
 
 .project-title {
