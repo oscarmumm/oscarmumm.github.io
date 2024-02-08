@@ -71,24 +71,28 @@
         </nav>
         <main>
             <section class="section home" id="home">
-                <img
-                    class="profile-pic"
-                    src="./assets/img/profile-pic.webp"
-                    alt=""
-                />
-                <h1 class="home__main-title">Hola! Soy Oscar</h1>
-                <img class="home-bg" src="./assets/icons/dev.svg" alt="" />
-                <p class="home__subtitle">Desarrollador Web Front-end</p>
-                <p class="home__presentation">
-                    Trabajo hace muchos años en gastronomía, y estudio
-                    desarrollo web con el objetivo de poder cambiar el rumbo y
-                    poder trabajar en el rubro IT
-                </p>
+                <div class="home-pic-container">
+                    <img
+                        class="profile-pic"
+                        src="./assets/img/profile-pic.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="home-info-container">
+                    <h1 class="home__main-title">Hola! Soy Oscar</h1>
+                    <p class="home__subtitle">Desarrollador Web Front-end</p>
+                    <p class="home__presentation">
+                        Trabajo hace muchos años en gastronomía, y estudio
+                        desarrollo web con el objetivo de poder cambiar el rumbo
+                        y poder trabajar en el rubro IT
+                    </p>
+                </div>
+                <img class="img-bg" src="./assets/icons/dev.svg" alt="" />
             </section>
 
             <section class="section skills" id="skills">
                 <h2 class="section__title">Habilidades</h2>
-                <img class="skills-bg" src="./assets/icons/skills.svg" alt="" />
+                <img class="img-bg" src="./assets/icons/skills.svg" alt="" />
                 <p class="section__message">
                     Estas son algunas de las habilidades que he adquirido a lo
                     largo de mi carrera
@@ -211,7 +215,7 @@
             <section class="section certification" id="certification">
                 <h2 class="section__title">Certificaciones</h2>
                 <img
-                    class="certification-bg"
+                    class="img-bg"
                     src="./assets/icons/certifications.svg"
                     alt=""
                 />
@@ -220,8 +224,9 @@
                     en la UTN, luego comencé la carrera de Front-end en
                     Educación IT, donde completé todos los cursos que componen
                     la carrera. Después continué mi capacitación realizando
-                    cursos en Free Code Camp. Actualmente sigo capacitándome
-                    practicando con la realización de proyectos.
+                    cursos en Free Code Camp. Actualmente estoy por comenzar a
+                    cursar la Tecnicatura Superior en Programación y sigo
+                    capacitándome practicando con la realización de proyectos.
                 </p>
                 <div class="institution-div">
                     <h3 class="institution">UTN</h3>
@@ -307,18 +312,29 @@
 
             <section class="section contact" id="contact">
                 <h2 class="section__title">Contacto</h2>
-                <img class="contact-bg" src="./assets/icons/contact.svg" alt="">
+                <img class="img-bg" src="./assets/icons/contact.svg" alt="" />
                 <div class="contact-info">
                     <p class="email">oscarmumm@gmail.com</p>
                     <button class="clipboard-btn" id="clipboardBtn">
-                        <img class="clipboard-icon" src="./assets/icons/clipboard.svg" alt="" />
+                        <img
+                            class="clipboard-icon"
+                            src="./assets/icons/clipboard.svg"
+                            alt=""
+                        />
                     </button>
 
                     <p class="linkedin">LinkedIn: oscar-mumm</p>
-                    <a class="linkedin-link" href="https://www.linkedin.com/in/oscar-mumm/" target="_blank">
-                        <img class="linkedin-icon" src="./assets/icons/linkedin.svg" alt="">
+                    <a
+                        class="linkedin-link"
+                        href="https://www.linkedin.com/in/oscar-mumm/"
+                        target="_blank"
+                    >
+                        <img
+                            class="linkedin-icon"
+                            src="./assets/icons/linkedin.svg"
+                            alt=""
+                        />
                     </a>
-
                 </div>
                 <div class="alert-msg" id="alertMsg">
                     <p>E-mail copiado al portapapeles</p>
