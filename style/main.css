@@ -227,6 +227,8 @@ nav ul a span {
 
 /*------------------------- HOME SECTION */
 
+
+
 .profile-pic {
     width: 200px;
     transform: rotate(-25deg);
@@ -284,8 +286,6 @@ nav ul a span {
 /*------------------------- PROJECTS */
 
 .project {
-    /* background: var(--accent); */
-    /* background: rgba(1, 195, 141, .8); */
     border-radius: 20px;
     padding: 1rem;
     display: flex;
@@ -412,7 +412,6 @@ nav ul a span {
 }
 
 .show-alert {
-    /* display: block; */
     transform: translateX(0);
     opacity: 1;
 }
@@ -455,6 +454,7 @@ nav ul a span {
     }
     nav ul li:hover {
         background-color: #01c38d;
+        border-radius: 10px;
     }
     nav ul li a {
         width: 100%;
@@ -486,6 +486,7 @@ nav ul a span {
     .project {
         display: grid;
         grid-template-columns: auto auto auto;
+        padding: 2rem;
     }
     .project-img {
         width: 400px;
