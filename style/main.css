@@ -480,6 +480,9 @@ nav ul a span {
         margin-top: 10vh;
         flex-direction: row-reverse;
     }
+    .profile-pic {
+        width: 300px;
+    }
     .home-info-container {
         max-width: 500px;
     }
